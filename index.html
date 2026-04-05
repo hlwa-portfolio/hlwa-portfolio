@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #222;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    header {
+      border-bottom: 2px solid #333;
+      padding-bottom: 16px;
+      margin-bottom: 32px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    header .tagline {
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    header .badge {
+      display: none;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .section-label {
+      font-size: 0.8rem;
+      color: #666;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .section-label::after {
+      display: none;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 12px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      padding: 14px;
+    }
+
+    .card .icon {
+      display: none;
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #444;
+      margin: 0;
+    }
+
+    .media-placeholder {
+      border: 2px dashed #aaa;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: #666;
+      text-align: center;
+      padding: 20px;
+      margin-top: 16px;
+    }
+
+    .media-placeholder .media-icon {
+      font-size: 2rem;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 12px;
+    }
+
+    .member-card {
+      border: 1px solid #ccc;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 84px;
+      height: 84px;
+      margin: 0 auto 12px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .member-card h3 {
+      font-size: 1rem;
+      margin-bottom: 2px;
+    }
+
+    .member-card .role {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    .member-card .links {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .member-card .links a {
+      font-size: 0.8rem;
+      color: #0000ee;
+    }
+
+    footer {
+      text-align: center;
+      padding: 16px 0;
+      border-top: 1px solid #ccc;
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- header -->
+  <header>
+    <span class="badge">Project Portfolio</span>
+    <h1>Your Project Name Here</h1>
+    <p class="tagline">
+      A focused, one-line summary of the project and the people it is meant for.
+    </p>
+  </header>
+
+  <main>
+
+    <!-- project description -->
+    <section id="description">
+      <div class="section-label">01 — Project Description</div>
+      <h2>What Is It &amp; Why Does It Matter?</h2>
+
+      <p>
+        <strong>The High Level Waste Application Project</strong> is lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Integer non arcu sed nibh tempus
+        hendrerit a non massa.
+      </p>
+
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+        architecto beatae vitae dicta sunt explicabo.
+      </p>
+    </section>
+
+    <!-- highlights -->
+    <section id="features">
+      <div class="section-label">02 — Key Features &amp; Highlights</div>
+      <h2>What Can It Do?</h2>
+      <p>
+        A quick look at the parts of the project that matter most.
+      </p>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="icon">✦</div>
+          <h3>Feature One</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at velit ac purus fermentum luctus.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">✦</div>
+          <h3>Feature Two</h3>
+          <p>Praesent commodo, sapien non facilisis hendrerit, mi neque sodales arcu, vitae faucibus nisl sem in erat.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">✦</div>
+          <h3>Feature Three</h3>
+          <p>Curabitur ultrices, nunc nec gravida tincidunt, ligula sem cursus justo, eu feugiat lorem magna sit amet leo.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">✦</div>
+          <h3>Feature Four</h3>
+          <p>Aliquam erat volutpat. Donec pretium, arcu non posuere tincidunt, nisl lorem viverra nibh, vitae dictum metus est at odio.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">✦</div>
+          <h3>Feature Five</h3>
+          <p>Morbi in turpis sed augue pharetra consequat. Nulla facilisi. Duis nec neque vel augue ullamcorper luctus.</p>
+        </div>
+      </div>
+
+      <!-- media / demo slot -->
+      <div class="media-placeholder">
+        <span class="media-icon">🖼</span>
+        <strong>Screenshot / Demo / Figure</strong>
+        <span>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+          Visuals, embeds, and/or quick demos live here.
+        </span>
+      </div>
+    </section>
+
+    <!-- team -->
+    <section id="team">
+      <div class="section-label">03 — Team Credits</div>
+      <h2>Meet the Team</h2>
+
+      <div class="team-grid">
+        <div class="member-card">
+          <div class="avatar">
+            <img src="images/member-one.jpg" alt="Team Member One profile picture" />
+          </div>
+          <h3>Team Member One</h3>
+          <p class="role">Role / Title</p>
+          <div class="links">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="avatar">
+            <img src="images/member-two.jpg" alt="Team Member Two profile picture" />
+          </div>
+          <h3>Team Member Two</h3>
+          <p class="role">Role / Title</p>
+          <div class="links">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="avatar">
+            <img src="images/member-three.jpg" alt="Team Member Three profile picture" />
+          </div>
+          <h3>Team Member Three</h3>
+          <p class="role">Role / Title</p>
+          <div class="links">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Past contributors | LAW | Project Partners -->
+      <p style="margin-top: 24px; font-size: 0.9rem;">
+        <strong>Past Contributors:</strong>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 [Team Name]</p>
+  </footer>
+
+</body>
+</html>
